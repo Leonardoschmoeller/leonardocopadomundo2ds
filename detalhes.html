@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes da Copa do Mundo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-logo" aria-hidden="true">🏆</span>
+      <div>
+        <h1>Detalhes da Copa do Mundo</h1>
+        <p>Histórias, finalistas, estatísticas e curiosidades de cada edição.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="details-container">
+    <nav class="page-menu">
+      <button type="button" class="menu-button" onclick="window.history.back()">← Voltar à página anterior</button>
+      <a href="index.html" class="menu-link">Linha do Tempo</a>
+    </nav>
+
+    <section class="worldcup-hero">
+      <div class="edition-year" id="cup-year">1930</div>
+      <h2 id="cup-title">Primeira edição da Copa do Mundo</h2>
+      <p id="cup-host">Uruguai</p>
+    </section>
+
+    <section class="finalists" aria-labelledby="finalistas-title">
+      <div class="section-title">
+        <h2 id="finalistas-title">Os Finalistas</h2>
+      </div>
+      <div class="finalist-cards">
+        <article class="card">
+          <h4>Campeão</h4>
+          <p id="champion-name">Uruguai</p>
+        </article>
+        <article class="card">
+          <h4>Vice-Campeão</h4>
+          <p id="runnerup-name">Argentina</p>
+        </article>
+        <article class="card score-card">
+          <h4>Placar da Final</h4>
+          <p id="match-score">4–2</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats-curiosities" aria-labelledby="stats-title">
+      <div class="section-title">
+        <h2 id="stats-title">Estatísticas e Curiosidades</h2>
+      </div>
+      <ul class="stats-list">
+        <li>
+          <strong>Total de faltas marcadas</strong>
+          <span id="fouls">94</span>
+        </li>
+        <li>
+          <strong>Cartões amarelos</strong>
+          <span id="yellow-cards">45</span>
+        </li>
+        <li>
+          <strong>Cartões vermelhos</strong>
+          <span id="red-cards">2</span>
+        </li>
+        <li>
+          <strong>Artilheiro e gols</strong>
+          <span id="top-scorer">Guillermo Stábile (Argentina) - 8 gols</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Modelo de página de detalhes para edições de Copa do Mundo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
