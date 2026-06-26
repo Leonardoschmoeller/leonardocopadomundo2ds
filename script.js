@@ -455,6 +455,16 @@ function loadWorldCupDetails() {
   topScorerElement.textContent = data.topScorer;
   scorerImage.src = data.scorerImage;
   momentImage.src = data.momentImage;
+
+  // populate flag section if present
+  const champFlagName = document.getElementById('champion-flag-name');
+  const runnerFlagName = document.getElementById('runnerup-flag-name');
+  const champFlagImg = document.getElementById('champion-flag');
+  const runnerFlagImg = document.getElementById('runnerup-flag');
+  if (champFlagName) champFlagName.textContent = data.champion;
+  if (runnerFlagName) runnerFlagName.textContent = data.runnerUp;
+  if (champFlagImg) champFlagImg.src = `https://via.placeholder.com/360x240?text=${encodeURIComponent(data.champion)}`;
+  if (runnerFlagImg) runnerFlagImg.src = `https://via.placeholder.com/360x240?text=${encodeURIComponent(data.runnerUp)}`;
 }
 
 function initPage() {
