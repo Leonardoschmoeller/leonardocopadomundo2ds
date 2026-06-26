@@ -440,6 +440,14 @@ main {
     width: 900px; /* Define a largura da imagem */
     height: auto; /* Mantém a proporção correta para não distorcer */
 }
+.colegio {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+.autor {
+  text-align: center;}
 
 
 
